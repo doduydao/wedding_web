@@ -13,9 +13,6 @@ function changeLanguage(lang, before_rsvp_init=false) {
     else if (lang == "vi") {
         language_dict = language_vi
     }
-    else if (lang == "fr") {
-        language_dict = language_fr
-    }
     $("[data-translate]").each(function(){
         if($(this).is( "input" ) || $(this).is( "textarea" )){
            $(this).attr('placeholder', language_dict[$(this).data("translate")])

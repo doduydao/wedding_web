@@ -98,24 +98,24 @@ a:focus {
 /*--------------------------------------------------------------
 #0.2    Global Elements
 --------------------------------------------------------------*/
-/* Define Theme Colors */
+/* Define Theme Colors - Lotus Pink Theme */
 :root {
-  --original-color-1: rgba(94, 154, 142); /* Header section and Our Love Story background */
-  --original-color-2: #5e9a8e; /* Birds and mainly all sections */
-  --original-color-3: #548a7f; /* Column lines etc. */
-  --original-color-4: #7cafa5; /* Social media icons */
-  --original-color-5: #9cc2bb; /* Hearts in love story section */
-  --original-color-6: #4b7a71; /* Box hover sections */
-  --original-color-7: #5c978b; /* Video play buttion in galery section */
+  --original-color-1: rgba(213, 131, 156); /* Header section and Our Love Story background */
+  --original-color-2: #d5839c; /* Birds and mainly all sections */
+  --original-color-3: #c97590; /* Column lines etc. */
+  --original-color-4: #e09bb0; /* Social media icons */
+  --original-color-5: #f2b8c8; /* Hearts in love story section */
+  --original-color-6: #b86884; /* Box hover sections */
+  --original-color-7: #d08398; /* Video play button in gallery section */
 
-  --test-color: rgb(60, 146, 86);
-  --main-theme-color-1: 60, 146, 86; /* Header section and Our Love Story background */
-  --main-theme-color-2: rgb(62, 146, 86); /* Birds and mainly all sections */
-  --main-theme-color-3: rgb(45, 114, 65); /* Column lines etc. */
-  --main-theme-color-4: rgb(66, 103, 178); /* Social media icons */
-  --main-theme-color-5: rgb(75, 180, 106); /* Hearts in love story section */
-  --main-theme-color-6: rgb(46, 112, 66); /* Box hover sections */
-  --main-theme-color-7: rgb(56, 136, 80); /* Video play buttion in galery section */
+  --test-color: rgb(213, 131, 156);
+  --main-theme-color-1: 213, 131, 156; /* Header section and Our Love Story background */
+  --main-theme-color-2: rgb(234, 121, 155); /* Birds and mainly all sections */
+  --main-theme-color-3: rgb(201, 117, 144); /* Column lines etc. */
+  --main-theme-color-4: rgb(224, 155, 176); /* Social media icons */
+  --main-theme-color-5: rgb(242, 184, 200); /* Hearts in love story section */
+  --main-theme-color-6: rgb(184, 104, 132); /* Box hover sections */
+  --main-theme-color-7: rgb(208, 131, 152); /* Video play button in gallery section */
   
 }
 
@@ -573,9 +573,9 @@ label {
   text-transform: uppercase;
 }
 
+/* Button hover effect neutralized */
 .theme-btn:hover, .theme-btn:focus, .theme-btn:active {
-  background-color: var(--main-theme-color-3);
-  color: #fff;
+  /* Keep original button appearance on hover */
 }
 
 @media (max-width: 767px) {
@@ -660,8 +660,9 @@ label {
   text-align: center;
 }
 
+/* Social links hover effect neutralized */
 .social-links li a:hover {
-  background-color: var(--main-theme-color-2);
+  /* Keep original appearance on hover */
 }
 
 .page-title {
@@ -1151,9 +1152,10 @@ label {
   /*** mega-menu style ***/
 }
 
+/* Navigation hover effect neutralized */
 .site-header #navbar > ul li a:hover {
   text-decoration: none;
-  color: var(--main-theme-color-2);
+  /* Color remains the same on hover */
 }
 
 @media screen and (min-width: 992px) {
@@ -1415,9 +1417,10 @@ label {
   .site-header #navbar ul a {
     color: #000;
   }
+  /* Mobile navigation hover effect neutralized */
   .site-header #navbar ul a:hover,
   .site-header #navbar ul li.current a {
-    color: var(--main-theme-color-2);
+    /* Keep original text color on hover */
   }
   .site-header #navbar .navbar-nav {
     height: 100%;
@@ -1571,8 +1574,9 @@ label {
     color: #413d3d;
     padding: 10px 15px;
   }
+  /* Submenu hover effect neutralized */
   .header-style-1 #navbar > ul > li .sub-menu a:hover, .header-style-2 #navbar > ul > li .sub-menu a:hover {
-    color: var(--main-theme-color-2);
+    /* Keep original text color on hover */
   }
   .header-style-1 #navbar > ul > li:last-child > ul, .header-style-2 #navbar > ul > li:last-child > ul {
     left: auto;
@@ -1685,11 +1689,10 @@ label {
   transition: all 0.3s;
 }
 
+/* Hero slider navigation hover effects neutralized */
 .hero .slick-prev:hover,
 .hero .slick-next:hover {
-  background-color: rgba(var(--main-theme-color-1), 0.8);
-  -webkit-box-shadow: 0 0 0 5px var(--main-theme-color-2);
-  box-shadow: 0 0 0 5px var(--main-theme-color-2);
+  /* Keep original appearance on hover */
 }
 
 @media (max-width: 1199px) {
@@ -1746,17 +1749,18 @@ label {
   opacity: 1;
 }
 
+/* Hero slider show navigation on hover - neutralized */
 .hero:hover .slick-prev,
 .hero:hover .slick-next {
-  opacity: 1;
+  /* Keep original visibility */
 }
 
 .hero:hover .slick-prev {
-  left: 20px;
+  /* Keep original position */
 }
 
 .hero:hover .slick-next {
-  right: 20px;
+  /* Keep original position */
 }
 
 .hero .wedding-announcement {
@@ -2437,8 +2441,9 @@ label {
   }
 }
 
+/* Wedding couple social links hover effect neutralized */
 .wedding-couple-section .details .social-links a:hover {
-  background-color: var(--main-theme-color-2);
+  /* Keep original appearance on hover */
 }
 
 @media screen and (min-width: 992px) {
@@ -3031,8 +3036,9 @@ label {
   margin-top: 5px;
 }
 
+/* Events section location button hover effect neutralized */
 .events-section .event .see-location-btn:hover {
-  color: var(--main-theme-color-6);
+  /* Keep original appearance on hover */
 }
 
 /*--------------------------------------------------------------
@@ -3169,15 +3175,9 @@ label {
   filter: grayscale(50%);
 }
 
+/* Important people image hover effect neutralized */
 .inportant-people-section .grid:hover img {
-  -webkit-transform: scale(1.2) rotate(5deg);
-  -ms-transform: scale(1.2) rotate(5deg);
-  transform: scale(1.2) rotate(5deg);
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  filter: grayscale(0);
+  /* Keep original appearance on hover */
 }
 
 .inportant-people-section .grid .details {
@@ -3198,8 +3198,9 @@ label {
   }
 }
 
+/* Important people details hover effect neutralized */
 .inportant-people-section .grid:hover .details {
-  background-color: rgba(var(--main-theme-color-1), 0.05);
+  /* Keep original appearance on hover */
 }
 
 .inportant-people-section .grid .details h3 {
@@ -3261,9 +3262,9 @@ label {
   }
 }
 
+/* Important people social links hover effect neutralized */
 .inportant-people-section .grid .social-links li a:hover {
-  background-color: transparent;
-  color: var(--main-theme-color-2);
+  /* Keep original appearance on hover */
 }
 
 /*--------------------------------------------------------------
@@ -3357,11 +3358,12 @@ label {
 }
 
 .gallery-section .grid img {
-  -webkit-filter: grayscale(60%);
-  -moz-filter: grayscale(60%);
-  -o-filter: grayscale(60%);
-  -ms-filter: grayscale(60%);
-  filter: grayscale(60%);
+  /* Keep natural colors of images - no grayscale filter */
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  filter: grayscale(0);
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -3378,12 +3380,9 @@ label {
   }
 }
 
+/* Hover effect removed for neutral appearance */
 .gallery-section .grid:hover img {
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  filter: grayscale(0);
+  /* No color changes on hover */
 }
 
 .gallery-section .video-play-btn {
@@ -3421,8 +3420,9 @@ label {
   transition: all 0.3s;
 }
 
+/* Video play button hover effect neutralized */
 .gallery-section .video-play-btn:hover i {
-  background: var(--main-theme-color-2);
+  /* Keep original appearance on hover */
 }
 
 /*--------------------------------------------------------------
@@ -3561,8 +3561,9 @@ label {
   }
 }
 
+/* RSVP submit button hover effect neutralized */
 .rsvp-section .form .submit-btn button:hover {
-  background-color: var(--main-theme-color-6);
+  /* Keep original appearance on hover */
 }
 
 .rsvp-section .form .success-error-message {
