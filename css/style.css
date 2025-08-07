@@ -44,6 +44,10 @@ body {
   font-size: 18px;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -64,6 +68,8 @@ body {
 p {
   color: #767878;
   line-height: 1.8em;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -73,6 +79,10 @@ h4,
 h5,
 h6 {
   color: #6e6e6e;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ul {
@@ -571,6 +581,10 @@ label {
   -ms-border-radius: 0;
   border-radius: 0;
   text-transform: uppercase;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Button hover effect neutralized */
@@ -1500,7 +1514,7 @@ label {
 }
 
 .header-style-1 .couple-logo h1, .header-style-2 .couple-logo h1 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Alex Brush", cursive;
   font-size: 35px;
   font-size: 1.94444rem;
   margin: 0;
@@ -3031,14 +3045,12 @@ label {
 
 .events-section .event .see-location-btn {
   font-weight: 600;
-  color: var(--main-theme-color-2);
-  display: inline-block;
-  margin-top: 5px;
+  text-rendering: optimizeLegibility;
 }
 
-/* Events section location button hover effect neutralized */
-.events-section .event .see-location-btn:hover {
-  /* Keep original appearance on hover */
+.events-section .event .see-location-btn {
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
 }
 
 /*--------------------------------------------------------------
@@ -3408,21 +3420,6 @@ label {
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* Video play button hover effect neutralized */
-.gallery-section .video-play-btn:hover i {
-  /* Keep original appearance on hover */
 }
 
 /*--------------------------------------------------------------
