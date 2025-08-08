@@ -71,7 +71,7 @@ function changeMessageLanguage(lang_dict) {
 // Define the language reload anchors and set default language
 // var language_dict = language_vi;
 // document.body.className='vi'
-changeLanguage('en', before_rsvp_init=true)
+changeLanguage('vi', before_rsvp_init=true)
 
 // Check if a hash value exists in the URL
 if (window.location.hash) {
